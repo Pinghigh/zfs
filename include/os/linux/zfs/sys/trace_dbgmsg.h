@@ -22,6 +22,9 @@
 #if defined(_KERNEL)
 #if defined(HAVE_DECLARE_EVENT_CLASS)
 
+#if defined(ASSIGN_STR_ONE_PARAMETER)
+#define __assign_str(a, b) __assign_str(a)
+
 #undef TRACE_SYSTEM
 #define	TRACE_SYSTEM zfs
 
